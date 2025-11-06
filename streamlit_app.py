@@ -7,6 +7,8 @@ import requests
 url = "https://github.com/maxjgarciam-ops/dashboard-streamlit/raw/refs/heads/main/Data/Cob_202510_Telecobro_FutM_ConDesct..pkl"
 response = requests.get(url)
 df = pickle.loads(response.content)
+st.write("Columnas disponibles:", df.columns.tolist())
+
 
 # Título
 st.title("Panel de Reportes Semanales")
