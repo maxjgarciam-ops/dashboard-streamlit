@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import pickle
 import requests
 
-url = "https://github.com/maxjgarciam-ops/dashboard-streamlit/blob/main/Data/Cob_202510_Telecobro_FutM_ConDesct..pkl"
+url = "https://github.com/maxjgarciam-ops/dashboard-streamlit/raw/refs/heads/main/Data/Cob_202510_Telecobro_FutM_ConDesct..pkl"
 response = requests.get(url)
 df = pickle.loads(response.content)
 
